@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="text/javascript" href="script.js">
+</head>
+<body>
+	<nav class="realnav">
+		<div class="hamburger" onclick="toggleMenu()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="bar" id="navMenu">
+			<li class="list"><a href="index.html" class="active items">Goats</a></li>
+			<li class="list"><a href="sports.html" class="items">Home</a></li>
+			<li class="list"><a href="music.html" class="items">Cars</a></li>
+			<li class="list"><a href="crafts.html" class="items">Anime</a></li>
+			<li class="list"><a href="contact.html" class="items">Details</a></li>
+		</ul>
+	</nav>
+    </header>
+<h1 style="text-align: center;">GOAT VS GOAT</h1>
+<p>Welcome to my home pages where i discuss multiple interests that i have in multiple categories <br>I compare my favorite things ain hope of making it clear what i have in interest </p>
+<p>Choose where you would like to explore</p>
+<tbody>
+    <tr>
+        <td><a href="index.html"><button class="accordion">Sports </button></a></td>
+    </tr>
+</tbody>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('navMenu');
+        menu.classList.toggle('show');
+    }
+</script>
+
+    
+</body>
+</html>

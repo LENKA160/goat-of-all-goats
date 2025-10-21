@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Interest</title>
+  <link rel="stylesheet" href="web.css">
+  
+  
+</head>
+<body>
+	<nav class="realnav">
+		<div class="hamburger" onclick="toggleMenu()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul class="bar" id="navMenu">
+			<li class="list"><a href="index.html" class="active items">Goats</a></li>
+			<li class="list"><a href="sports.html" class="items">Home</a></li>
+			<li class="list"><a href="music.html" class="items">Cars</a></li>
+			<li class="list"><a href="crafts.html" class="items">Anime</a></li>
+			<li class="list"><a href="contact.html" class="items">Details</a></li>
+		</ul>
+	</nav>
+    </header>
+
+  <h1>GOAT VS GOAT</h1>
+  <h2>Sports</h2>
+  <table>
+    <tbody>
+      
+      <tr>
+        <td>
+            <p style="font-size: 100px;">⚽</p>
+        </td>
+        <td>
+          <button class="accordion">Lionel Messi ⮟</button>
+          <div class="panel">
+            <img src="messi.webp" alt="Leo">
+            <p>He is the reason why i started watching football from the days he was part of Barcelona F.C to now playing for Inter Miami.</p>
+            
+          </div>
+        </td>
+        <td>
+          <button class="accordion">Christiano Ronaldo  ⮟</button>
+          <div class="panel">
+            <img style="height: 300px;" src="ronaldo.jpg" alt="CR7">
+            <p>The man I hated from the start, but ended up respecting in the end, <br>
+            mainly becauseof incredible upbringing and work ethic , Cristiano Ronaldo was out of nothing, <br>
+        but became somthing special from his das in Manchester United to all the way to his olden age in Saudi Arabia</p>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><p style="font-size: 100px;">🥊</p></td>
+        <td>
+          <button class="accordion">Mike Tyson ⮟</button>
+          <div class="panel">
+            <img src="mike.webp" alt="ironmike">
+            <p>The legend himself iron mike, considered to be one of, if not  the greatest boxer of all time <br>
+            Mike Tyson was reportedbly said to have a rough chilhood as he was bullied from a young age , <br>
+        which is what caused his aggression to spike, luckily he would channel that anger into his sport of boxing</p>
+          </div>
+        </td>
+        <td>
+          <button class="accordion">Muhammad ali ⮟</button>
+          <div class="panel">
+            <img src="ali.webp" alt="Muhammad">
+        <p>Ali is one icon of man , regarded by many as the people's champion , as <br>
+        he was a man of the people , Ali never shyed awy fro a challenge as he could get in the <br>
+     in the ring with anyone regardless of the body weight division  </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><p style="font-size: 100px;">🏉</p></td>
+        <td>
+            <button class="accordion"> Siya Kolisi ⮟</button>
+            <div class="panel">
+                <img src="siya.webp" alt="Finn-Balor">
+                <p>Siya Kolisi is the captain of the  South African Rugby national squad, he is considered an icon the field of rugby <br> as he has led his nation to world cup victtory 4 times now <br>a feat that has only been achieved by the Brazilian Nationa football team</p>
+            </div>
+        </td>
+        <td>
+            <button class="accordion">Mapimpi</button>
+            <div class="panel">
+                <img style="height: 250px;" src="mapimpi.jpg" alt="Ronn">
+                <p>The man i cosider my role model when it comes to playng rugby <br>
+                unlike mst of his bulky teammates, Mapimpi was dubted to be a rugby payer <br>
+            because of his smaller frame , but despite that he proved that you can still accomplish your dreams despite hatever situation you find yourself in</p>
+            </div>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById('navMenu');
+        menu.classList.toggle('show');
+    }
+    const acc = document.querySelectorAll(".accordion");
+    acc.forEach(button => {
+      button.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    });
+</script>
+
+  
+
+</body>
+</html>
